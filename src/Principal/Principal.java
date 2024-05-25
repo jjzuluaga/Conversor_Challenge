@@ -43,6 +43,10 @@ public class Principal {
         while (numeroMenu != 9 ){
             System.out.println(menu1);
             numeroMenu = lectura.nextInt();
+            if (numeroMenu == 9){
+                System.out.println("Saliendo del programa; Gracias por utilizar nuestros servicios");
+                break;
+            }
             switch (numeroMenu){
                 case 1:
                     monedaBase = "COP";
@@ -68,9 +72,7 @@ public class Principal {
                 case 8:
                     monedaBase = "VES";
                     break;
-                case 9:
-                    System.out.println("Saliendo del programa; Gracias por utilizar nuestros servicios");
-                    break;
+
             }
             System.out.println  (menu2);
             numeroMenu = lectura.nextInt();
@@ -100,9 +102,6 @@ public class Principal {
                     break;
                 case 8:
                     monedObjetivo = "VES";
-                    break;
-                case 9:
-                    System.out.println("Saliendo del programa; Gracias por utilizar nuestros servicios");
                     break;
             }
             System.out.println("Genial, ahora porfavor ingresa la cantidad de dinero que deseas convertir:");
